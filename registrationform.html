@@ -1,0 +1,114 @@
+<!Doctype html>
+	<html lang="en">
+	<head>
+		<title>Registration page</title>
+		
+		<style>
+
+			.centered{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.container{
+				position: relative;
+				text-align: center;
+				color: white;
+			}
+
+		</style> 
+	</head>
+	<body>
+		<div class="Container">
+			<img src="ocean2.jpg">
+			<div class="centered">
+
+				<h1 align="center" style="Color: white">Registration Form</h1>
+				<h4 align="center"style="Color: white">Use tab keys to move from one input to the next</h4>
+				<p id="error"></p>
+				<table align="center" width="150%">
+					<form name="regform" method="post" id="form1">
+						<tr>
+							<td><label for="userid"><b style="Color: white">User ID</b></label></td>
+							<td><input onfocusout="checkuserid()" type="text" id="userid" name="userid" placeholder="User ID" required></td>
+						</tr>
+						<tr>
+
+							<td colspan="2"><p id="useriderror"></p></td>
+						</tr>
+						<tr>
+							<td><label for="password"><b style="Color: white">Password</b></label></td>
+							<td><input onfocusout="checkpassword()" type="password" id="password" name="password" placeholder="Password" value="" required></td>
+
+						</tr>
+						<tr>
+
+							<td colspan="2"><p id="passerror"></p></td>
+						</tr>
+						<tr>
+							<td><label for="name"><b style="Color: white">Name</b></label></td>
+							<td><input type="text" id="name" name="name" placeholder="Enter Name" required></td>
+						</tr>
+						<tr>
+							<td><label for="address"><b style="Color: white">Address</b></label></td>
+							<td><input type="text" id="address" name="address" placeholder="Address" required></td>
+						</tr>
+						<tr>
+							<td><label for="country"><b style="Color: white">Country</b></label></td>
+							<td>
+								<select id="country" name="country" required>
+									<option value="bangladesh">Bangladesh</option>
+									<option value="india">India</option>
+									<option value="usa">USA</option>
+									<option value="japan">Japan</option>
+
+
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<div>
+								<td><label for="zipcode"><b style="Color: white">Zip Code</b></label></td>
+								<td><input onfocusout="checkzipcode()" type="digit" id="zipcode" name="zipcode" placeholder="Zipcode" required></td>
+							</tr>
+							<tr>
+
+								<td colspan="2"><p id="ziperror"></p></td>
+							</tr>
+						</div>
+						<tr>
+							<td><label for="email"><b style="Color: white">Email</b></label></td>
+							<td><input type="email" id="email" name="email" placeholder="Email" required></td>
+						</tr>
+						<tr>
+							<td><label><b style="Color: white">Sex</b></label></td>
+							<td><input type="radio" id="male" value="male">
+								<label for="male">Male</label>
+								<input type="radio" id="female" value="female">
+								<label for="female">Female</label></td>
+							</tr>
+							<tr>
+								<td><label><b style="Color: white">Language</b></label></td>
+								<td><input type="checkbox" id="english" value="english">
+									<label for="english">English</label>
+									<input type="checkbox" id="non-english" value="non-english">
+									<label for="non-english">Non-English</label></td>
+								</tr>
+								<tr>
+									<td><label for="about"><b style="Color: white">About</b></label></td>
+									<td><input type="longtext" id="about" name="about" placeholder="About"></td>
+								</tr>
+								<tr>
+									<td> </td>
+									<td><input id="button" type="submit" onclick="myFunction()" value="Submit" ></td>
+								</tr>
+							</form>
+						</table>
+
+
+
+						<script type="text/javascript" src="nafisa.js"></script>
+					</body>
+					</html>
