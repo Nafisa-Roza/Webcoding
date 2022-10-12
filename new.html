@@ -1,0 +1,73 @@
+<!Doctype html>
+	<html lang="en">
+	<head>
+		<title>Login Page</title>
+		<style>
+			*{
+				box-sizing: border-box;
+				width: 100%;
+	padding: 5px;
+	background-color: white;
+	font-weight: bold;
+			}
+			img{
+				border-top-left-radius: 30px;
+				border-bottom-left-radius: 30px;
+				border-top-right-radius: 30px;
+				border-bottom-right-radius: 30px;
+			}
+
+			
+			.btn1{
+				border: none;
+				outline: none;
+				height: 0px;
+				width: 0%;
+				background-color: black;
+				color: white;
+				border-radius: 4px;
+				font-weight: bold;
+
+			}
+			.container{
+				position: relative;
+				text-align: center;
+				color: white;
+			}
+			.centered{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.from-container{border: 1px;}
+		</style>
+		</head>
+		<body>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12"></div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<form>
+							<div class="from-group">
+								<label for="exampleInputEmail">Email address</label>
+								<input type="email" class="form control" id="exampleInputEmail" placeholder="Email">
+					        </div>
+					        <div class="from-group">
+								<label for="exampleInputPassword">Password</label>
+								<input type="password" class="form control" id="exampleInputPassword" placeholder="Password">
+					        </div>
+					        <div class="checkbox">
+					        <label>
+					        	<input type="checkbox">Check me out
+					        </label>
+					        </div>
+					        <button style="background-color: green;" type="submit" class="btn btn-success btn-block">Submit</button>
+					    </form>
+
+
+					<div class="col-md-4 col-sm-4 col-xs-12"></div>
+				</div>
+			</div>
+		</body>
+		</html>
